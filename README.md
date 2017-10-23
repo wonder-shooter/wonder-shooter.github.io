@@ -10,7 +10,7 @@ wonder-shooter webサイト用リポジトリ
 ## 動作環境
 
 - Mac(Sierra)/Windows10 での動作確認済み
-- node v6.11.2 以上で動作確認済み
+- node v7.2.1 以上で動作確認済み
 
 ## 参考リポジトリ
 
