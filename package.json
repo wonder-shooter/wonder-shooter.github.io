@@ -42,7 +42,6 @@
     "webpack": "^3.5.1"
   },
   "scripts": {
-    "copy": "gulp copy",
     "gulp": "gulp default",
     "webpack": "webpack --watch --devtool eval-source-map",
     "server": "browser-sync start --server htdocs --no-open --files 'htdocs' --no-ui --reload-debounce 1000",

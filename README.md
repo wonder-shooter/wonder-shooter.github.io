@@ -4,8 +4,8 @@ wonder-shooter webサイト用リポジトリ
 ## 手順
 
 1. $ npm install
-1. $ npm copy
-1. $ npm start で実行
+2. $ gulp copy
+3. $ npm start で実行
 
 ## 動作環境
 
