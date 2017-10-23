@@ -25,7 +25,7 @@ $ npm start
 
 ### `master`ブランチ
 
-`source`ブランチからのsubtreeリポジトリ
+GitHub Pages 公開用ブランチ（`source`ブランチからのsubtreeリポジトリ）
 
 開発後下記のコマンドで `source`ブランチから `master` subtreeブランチにマージする
 
