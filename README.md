@@ -37,7 +37,7 @@ $ git subtree push --prefix=htdocs origin master
 
 ## 動作環境
 
-- Mac(Sierra)/Windows10 での動作確認済み
+- Mac(Sierra)での動作確認済み
 - node v7.2.1 以上で動作確認済み
 
 ## 参考リポジトリ
