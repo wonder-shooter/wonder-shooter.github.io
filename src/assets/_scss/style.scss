@@ -1,0 +1,18 @@
+@import "mixin";
+
+html{
+  color: #000;
+  @include mqSP{
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+body{
+  background-color: #fff;
+  @include mqSP{
+    background-color: #000000;
+    padding: 30px;
+  }
+}
+

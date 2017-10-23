@@ -1,0 +1,46 @@
+{
+  "name": "ENW201709",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "jquery": "^3.2.1",
+    "webpack": "^3.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "css-mqpacker": "^6.0.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-watch": "^4.3.11",
+    "npm-run-all": "^4.1.1",
+    "run-sequence": "^2.1.0",
+    "webpack": "^3.5.1"
+  },
+  "scripts": {
+    "gulp": "gulp default",
+    "webpack": "webpack --watch --devtool eval-source-map",
+    "server": "browser-sync start --server htdocs --no-open --files 'htdocs' --no-ui --reload-debounce 1000",
+    "watch": "npm-run-all --parallel webpack gulp server",
+    "start": "npm-run-all watch",
+    "release": "npm-run-all --parallel release:*",
+    "release:webpack": "webpack",
+    "release:gulp": "gulp release"
+  },
+  "author": "",
+  "license": "ISC"
+}
