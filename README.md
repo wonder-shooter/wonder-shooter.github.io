@@ -16,3 +16,9 @@ wonder-shooter webサイト用リポジトリ
 
 - [maepon/markup-code-set](https://github.com/maepon/markup-code-set)
 - [manabuyasuda/website-template](https://github.com/manabuyasuda/website-template)
+
+## subtreeへのmerge
+
+```
+$ git subtree push --prefix=htdocs origin master
+```
