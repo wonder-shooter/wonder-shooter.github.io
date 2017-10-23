@@ -1,4 +1,5 @@
 # wonder-shooter-site
+
 wonder-shooter webサイト用リポジトリ
 
 ## 構成
@@ -25,9 +26,10 @@ $ npm start
 ### `master`ブランチ
 
 `source`ブランチからのsubtreeリポジトリ
+
 開発後下記のコマンドで `source`ブランチから `master` subtreeブランチにマージする
 
-subtreeへのmerge
+subtreeへのmerge（リモートが`origin`の場合）
 
 ```
 $ git subtree push --prefix=htdocs origin master
