@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
     "jquery": "^3.2.1",
-    "webpack": "^3.5.1"
+    "webpack": "^3.5.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "4.7.0",
+    "jquery.easing": "^1.4.1",
+    "simple-line-icons": "2.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -20,18 +26,23 @@
     "css-mqpacker": "^6.0.1",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "3.9.0",
+    "gulp-header": "1.8.9",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-watch": "^4.3.11",
     "npm-run-all": "^4.1.1",
+    "popper.js": "^1.12.6",
     "run-sequence": "^2.1.0",
     "webpack": "^3.5.1"
   },
   "scripts": {
+    "copy": "gulp copy",
     "gulp": "gulp default",
     "webpack": "webpack --watch --devtool eval-source-map",
     "server": "browser-sync start --server htdocs --no-open --files 'htdocs' --no-ui --reload-debounce 1000",
@@ -40,7 +51,5 @@
     "release": "npm-run-all --parallel release:*",
     "release:webpack": "webpack",
     "release:gulp": "gulp release"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }

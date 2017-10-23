@@ -1,0 +1,23 @@
+@import "mixin";
+@import "_bootstrap/css/bootstrap.min";
+@import "_font-awesome/scss/font-awesome";
+@import "_simple-line-icons/scss/simple-line-icons";
+@import "_startbootstrap-new-age/new-age";
+
+
+// html{
+//   color: #000;
+//   @include mqSP{
+//     background-color: #000000;
+//     color: #ffffff;
+//   }
+// }
+
+// body{
+//   background-color: #fff;
+//   @include mqSP{
+//     background-color: #000000;
+//     padding: 30px;
+//   }
+// }
+

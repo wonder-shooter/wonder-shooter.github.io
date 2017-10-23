@@ -12,18 +12,58 @@ const sourcemaps = require('gulp-sourcemaps');
 const pug = require('gulp-pug');
 const fs = require('fs');
 const notify = require("gulp-notify");
+var header = require('gulp-header');
+var cleanCSS = require('gulp-clean-css');
+var rename = require("gulp-rename");
+
+const VENDOR = {
+  bootstrap: 'src/assets/_scss/_bootstrap/',
+  simplelineicons: 'src/assets/_scss/_simple-line-icons/',
+  fontawesome: 'src/assets/_scss/_font-awesome/'
+};
 
 const SRC = {
+  css: 'src/assets/_scss/*.scss',
+  html: 'src/*.pug',
+  data: 'src/_data/'
+};
+
+const WATCH = {
   css: 'src/assets/_scss/**/*.scss',
   html: 'src/**/*.pug',
-  data: 'src/_data/'
+  data: 'src/_data/*'
 };
 
 const DEST = {
   css: 'htdocs/assets/css/',
+  fonts: 'htdocs/assets/fonts/',
   html: 'htdocs/'
 };
 
+gulp.task('copy', function() {
+  gulp.src([
+      'node_modules/bootstrap/dist/**/*',
+      '!**/npm.js',
+      '!**/bootstrap-theme.*',
+      '!**/*.map'
+    ])
+    .pipe(gulp.dest(VENDOR.bootstrap))
+  gulp.src(['node_modules/simple-line-icons/**/*'])
+    .pipe(gulp.dest(VENDOR.simplelineicons))
+  gulp.src(['node_modules/simple-line-icons/fonts/*'])
+    .pipe(gulp.dest(DEST.fonts))
+  gulp.src([
+      'node_modules/font-awesome/**',
+      '!node_modules/font-awesome/**/*.map',
+      '!node_modules/font-awesome/.npmignore',
+      '!node_modules/font-awesome/*.txt',
+      '!node_modules/font-awesome/*.md',
+      '!node_modules/font-awesome/*.json'
+    ])
+    .pipe(gulp.dest(VENDOR.fontawesome))
+  gulp.src(['node_modules/font-awesome/fonts/*'])
+    .pipe(gulp.dest(DEST.fonts))
+})
 
 gulp.task('html', () => {
   // JSONファイルの読み込み。
@@ -78,7 +118,7 @@ gulp.task('cssrelease', () => {
 gulp.task('default', () => {
   gulp.start(['css','html']);
 
-  watch(SRC.css, () => {
+  watch([WATCH.css,WATCH.html], () => {
     gulp.start(['css','html']);
   });
 });

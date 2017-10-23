@@ -1,3 +1,4 @@
 /node_modules
 /htdocs/assets/css/maps
 /htdocs/assets/maps
+/src/assets/_scss/_*/

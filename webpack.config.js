@@ -3,12 +3,18 @@ const webpack = require("webpack");
 module.exports = {
   entry: './src/assets/_javascript/main.js',
   output: {
-    path: `${__dirname}/assets/js`,
+    path: `${__dirname}/htdocs/assets/js`,
     filename: 'main.js'
   },
 
   plugins: [
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
+    })
   ],
 
   module:{
