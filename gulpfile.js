@@ -19,7 +19,8 @@ var rename = require("gulp-rename");
 const VENDOR = {
   bootstrap: 'src/assets/_scss/_bootstrap/',
   simplelineicons: 'src/assets/_scss/_simple-line-icons/',
-  fontawesome: 'src/assets/_scss/_font-awesome/'
+  fontawesome: 'src/assets/_scss/_font-awesome/',
+  newage: 'src/assets/_scss/_startbootstrap-new-age/'
 };
 
 const SRC = {
@@ -63,6 +64,8 @@ gulp.task('copy', function() {
     .pipe(gulp.dest(VENDOR.fontawesome))
   gulp.src(['node_modules/font-awesome/fonts/*'])
     .pipe(gulp.dest(DEST.fonts))
+  gulp.src(['node_modules/startbootstrap-new-age/scss/*'])
+    .pipe(gulp.dest(VENDOR.newage))
 })
 
 gulp.task('html', () => {
