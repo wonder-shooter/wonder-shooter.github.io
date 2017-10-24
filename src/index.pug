@@ -10,79 +10,55 @@ append variables
   - var pageOgpType= "website";
 
 block content
-  section#download.download.bg-primary.text-center
+  section#pointstable.pointstable.bg-primary.text-center
     .container
       .row
         .col-md-8.mx-auto
-          h2.section-heading Discover what all the buzz is about!
-          p Our app is available on any mobile device! Download now to get started!
-          //- .badges
-          //-   a.badge-link(href='#')
-          //-     img(src='assets/img/google-play-badge.svg', alt='')
-          //-   a.badge-link(href='#')
-          //-     img(src='assets/img/app-store-badge.svg', alt='')
-  section#features.features
+          h2.section-heading Points Table
+          p Score ranking on November 4, 2017
+          hr
+  section#system.system
     .container
       .section-heading.text-center
-        h2 Unlimited Features, Unlimited Fun
-        p.text-muted Check out what you can do with this app theme!
+        h2 Wonder-Shooter
+        p.text-muted Systems we are using
         hr
       .row
-        .col-lg-4.my-auto
-          //- .device-container
-          //-   .device-mockup.iphone6_plus.portrait.white
-          //-     .device
-          //-       .screen
-          //-         // Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
-          //-         img.img-fluid(src='assets/img/demo-screen-1.jpg', alt='')
-          //-       .button
-          //-         // You can hook the "home button" to some JavaScript events or just remove it
-        .col-lg-8.my-auto
-          .container-fluid
-            .row
-              .col-lg-6
-                .feature-item
-                  i.icon-screen-smartphone.text-primary
-                  h3 Device Mockups
-                  p.text-muted Ready to use HTML/CSS device mockups, no Photoshop required!
-              .col-lg-6
-                .feature-item
-                  i.icon-camera.text-primary
-                  h3 Flexible Use
-                  p.text-muted Put an image, video, animation, or anything else in the screen!
-            .row
-              .col-lg-6
-                .feature-item
-                  i.icon-present.text-primary
-                  h3 Free to Use
-                  p.text-muted As always, this theme is free to download and use for any purpose!
-              .col-lg-6
-                .feature-item
-                  i.icon-lock-open.text-primary
-                  h3 Open Source
-                  p.text-muted Since this theme is MIT licensed, you can use it commercially!
-  section.cta
-    .cta-content
+        .col-md-4
+          .system-item
+            a(href="https://unity3d.com/jp")
+              i.icon-camrecorder.text-primary
+            h3 Unity
+            p.text-muted Game Engine
+        .col-md-4
+          .system-item
+            a(href="https://www.vive.com/jp/")
+              i.icon-paper-plane.text-primary
+            h3 VIVE
+            p.text-muted Tracking System
+        .col-md-4
+          .system-item
+            a(href="https://nodejs.org/ja/")
+              i.icon-link.text-primary
+            h3 Node.js
+            p.text-muted Network
+  section#movie.movie
+    .movie-content
       .container
         h2
-          | Stop waiting.
+          | How does
           br
-          | Start building.
-        a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#contact') Let's Get Started!
-    .overlay
-  section#contact.contact.bg-primary
+          | Wonder Shooter
+          br
+          | work?
+  section#team.contact
     .container
       h2
-        | We
-        i.fa.fa-heart
-        |           new friends!
-      ul.list-inline.list-social
-        li.list-inline-item.social-twitter
-          a(href='#')
-            i.fa.fa-twitter
-        li.list-inline-item.social-facebook
-          a(href='#')
-            i.fa.fa-facebook
-        li.list-inline-item.social-google-plus
-          a(href='#')
-            i.fa.fa-google-plus
+        | Our Team
+      .row.justify-content-center
+        .col-md-4.text-center
+          a(href='http://meteorworks.jp/')
+            img.img-fluid(src="assets/img/meteorworks.svg",alt="METEORWORKS")
+        .col-md-4.text-center
+          a(href='https://kozarusha.com/')
+            img.img-fluid(src="assets/img/kozarusha.svg",alt="こざる舍")

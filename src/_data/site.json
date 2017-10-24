@@ -1,11 +1,11 @@
 {
   "url": "https://example.com",
-  "name": "Document",
-  "description": "サイトの概要",
-  "keywords": "サイトのキーワード1, サイトのキーワード2",
-  "ogpImage": "/ogp.jpg",
+  "name": "ふしぎマニューバー",
+  "description": "DojoCon Japan 2017 にて、Workshopとして開催した「ふしぎマニューバーでふかし体験」のwebサイトです",
+  "keywords": "DojoCon Japan 2017,ふしぎマニューバー,Unity,Vive,Tracker,Lighthouse",
+  "ogpImage": "/assets/img/ogp.png",
   "fbAppId": "",
   "fbAdmins": "",
   "twitterCard": "summary_large_image",
-  "twitterSite": "@SiteAccount"
+  "twitterSite": "@kozarusha"
 }
