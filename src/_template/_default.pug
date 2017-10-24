@@ -4,11 +4,13 @@ html(lang="ja")
   head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + pageOgpType + ": http://ogp.me/ns/" + pageOgpType + "#")
     include /_partial/_meta
   body#page-top
+    .l-wrap
+      include /_partial/_nav
+      include /_partial/_header
 
-    include /_partial/_nav
-    include /_partial/_header
+      block content
 
-    block content
-
-    include /_partial/_footer
+      include /_partial/_footer
+    #js-loader.loader
+      .loader-animation
     include /_partial/_script

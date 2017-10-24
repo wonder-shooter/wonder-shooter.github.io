@@ -4,8 +4,12 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'jquery.easing';
 
+function endload(){
+  $('#js-loader').delay(300).fadeOut(400);
+}
+
 function main(){
-  console.log('TEST');
+  setTimeout('endload()', 5000);
 }
 
 function newsAge(){
@@ -46,10 +50,14 @@ function newsAge(){
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-
 }
 
+// ページのロードが終わった後の処理
+$(window).on('load',function(){
+  endload();
+});
+
 $(function(){
-  newsAge();
   main();
+  newsAge();
 });
