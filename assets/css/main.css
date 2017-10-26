@@ -7420,27 +7420,43 @@ section.pointstable {
       margin-bottom: 0; }
     section.pointstable .badges .badge-link img {
       height: 60px; }
-  section.pointstable thead {
-    background-color: rgba(255, 255, 255, 0.4); }
-    section.pointstable thead th {
-      width: 25%; }
-    section.pointstable thead th.pink {
-      background-color: #f34379;
-      border-left: 1px solid #e9ecef; }
-    section.pointstable thead th.purple {
-      background-color: #8a3afc;
-      border-left: 1px solid #e9ecef; }
-    section.pointstable thead th.green {
-      background-color: #30da34;
-      border-left: 1px solid #e9ecef; }
-  section.pointstable tbody {
+  section.pointstable .rankingTable th {
+    width: 45%; }
+  section.pointstable .rankingTable th.rank {
+    width: 10%; }
+  section.pointstable .scoreTable th {
+    width: 25%; }
+  section.pointstable .rankingTable th,
+  section.pointstable .rankingTable td,
+  section.pointstable .scoreTable th,
+  section.pointstable .scoreTable td {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-left: 1px solid #e9ecef; }
+    section.pointstable .rankingTable th:first-child,
+    section.pointstable .rankingTable td:first-child,
+    section.pointstable .scoreTable th:first-child,
+    section.pointstable .scoreTable td:first-child {
+      border-left: none; }
+  section.pointstable .rankingTable th.pink,
+  section.pointstable .rankingTable td.pink,
+  section.pointstable .scoreTable th.pink,
+  section.pointstable .scoreTable td.pink {
+    background-color: #f34379; }
+  section.pointstable .rankingTable th.purple,
+  section.pointstable .rankingTable td.purple,
+  section.pointstable .scoreTable th.purple,
+  section.pointstable .scoreTable td.purple {
+    background-color: #8a3afc; }
+  section.pointstable .rankingTable th.green,
+  section.pointstable .rankingTable td.green,
+  section.pointstable .scoreTable th.green,
+  section.pointstable .scoreTable td.green {
+    background-color: #30da34; }
+  section.pointstable .rankingTable th.white,
+  section.pointstable .rankingTable td.white,
+  section.pointstable .scoreTable th.white,
+  section.pointstable .scoreTable td.white {
     background-color: rgba(255, 255, 255, 0.7); }
-    section.pointstable tbody td[scope=row] {
-      background-color: rgba(255, 255, 255, 0.4); }
-    section.pointstable tbody td.pink,
-    section.pointstable tbody td.purple,
-    section.pointstable tbody td.green {
-      border-left: 1px solid #e9ecef; }
 
 section.system .section-heading {
   margin-bottom: 100px; }

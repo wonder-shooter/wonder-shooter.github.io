@@ -34,7 +34,7 @@
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pointstable">PointsTable</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pointstable">Score Table</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#system">Systems</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#movie">Movie</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
@@ -60,13 +60,26 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 mx-auto">
-              <h2 class="section-heading">Points Table</h2>
-              <p>Score ranking on November 4, 2017</p>
+              <h2 class="section-heading">Score Table</h2>
+              <p>on November 4th, 2017</p>
               <hr>
               <div class="text-center mt-4">
-                <h3>Scores</h3>
+                <h3>Today's Top 10 Scores</h3>
+                <div class="table-responsive" id="top10">
+                  <table class="table rankingTable mt-4">
+                    <thead>
+                      <tr>
+                        <th class="rank">#</th>
+                        <th>name</th>
+                        <th>score</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+                <h3 class="mt-4">Today's Score Table</h3>
                 <div class="table-responsive" id="scorestable">
-                  <table class="table mt-4">
+                  <table class="table scoreTable mt-4">
                     <thead>
                       <tr>
                         <th>#</th>
