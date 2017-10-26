@@ -7420,6 +7420,27 @@ section.pointstable {
       margin-bottom: 0; }
     section.pointstable .badges .badge-link img {
       height: 60px; }
+  section.pointstable thead {
+    background-color: rgba(255, 255, 255, 0.4); }
+    section.pointstable thead th {
+      width: 25%; }
+    section.pointstable thead th.pink {
+      background-color: #f34379;
+      border-left: 1px solid #e9ecef; }
+    section.pointstable thead th.purple {
+      background-color: #8a3afc;
+      border-left: 1px solid #e9ecef; }
+    section.pointstable thead th.green {
+      background-color: #30da34;
+      border-left: 1px solid #e9ecef; }
+  section.pointstable tbody {
+    background-color: rgba(255, 255, 255, 0.7); }
+    section.pointstable tbody td[scope=row] {
+      background-color: rgba(255, 255, 255, 0.4); }
+    section.pointstable tbody td.pink,
+    section.pointstable tbody td.purple,
+    section.pointstable tbody td.green {
+      border-left: 1px solid #e9ecef; }
 
 section.system .section-heading {
   margin-bottom: 100px; }
