@@ -11,7 +11,8 @@ function main(){
     $tableObj = $("#scorestable"),
     $tableObjHead = $("#scorestable thead tr"),
     $tableObjBody = $("#scorestable tbody"),
-    count = 3;
+    count = 3,
+    scoreArray = [];
   // Table
   $.getJSON("/assets/js/score.json" , function(data) {
     for( var i=0; i < data.length; i++) {
@@ -32,7 +33,22 @@ function main(){
         $tableObjBody.append($('<tr>').attr('id', rowId));
         $('tr#' + rowId).append($('<td>').attr('scope','row').text(arrayOfStrings[1]));
       }
-      $('tr#' + rowId).append($('<td>').attr('class',color).text(data[i].score));
+      $('tr#' + rowId).append($('<td>').attr('class', 'white').text(data[i].score));
+    }
+    // Top10表示
+    data.sort(function(a,b){
+      if(a.score > b.score) return -1;
+      if(a.score < b.score) return 1;
+      return 0;
+    });
+    for( var i=1; i <= 10; i++) {
+      var name = data[i].name;
+      var arrayOfStrings = name.split('#');
+      var color = arrayOfStrings[0];
+      $('#top10 thead').append($('<tr>').attr('id', 'rank' + i));
+      $('tr#rank' + i).append($('<td>').text(i));
+      $('tr#rank' + i).append($('<td>').attr('class', color).text(data[i].name));
+      $('#rank' + i).append($('<td>').attr('class', 'white').text(data[i].score));
     }
   });
 }
