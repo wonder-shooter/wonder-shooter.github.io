@@ -4,12 +4,37 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'jquery.easing';
 
-function endload(){
-  $('#js-loader').delay(300).fadeOut(400);
-}
 
 function main(){
-  setTimeout('endload()', 5000);
+  // 点数表示
+  var
+    $tableObj = $("#scorestable"),
+    $tableObjHead = $("#scorestable thead tr"),
+    $tableObjBody = $("#scorestable tbody"),
+    count = 3;
+  // Table
+  $.getJSON("/assets/js/score.json" , function(data) {
+    for( var i=0; i < data.length; i++) {
+
+      if( i === 0) {
+        for( var n=0; n < count; n++) {
+          var name = data[n].name;
+          var arrayOfStrings = name.split('#');
+          $tableObjHead.append($('<th>').attr('class',arrayOfStrings[0]).text(arrayOfStrings[0]));
+        }
+      }
+
+      var name = data[i].name;
+      var arrayOfStrings = name.split('#');
+      var color = arrayOfStrings[0];
+      var rowId = 'row' + arrayOfStrings[1];
+      if( i%count === 0){
+        $tableObjBody.append($('<tr>').attr('id', rowId));
+        $('tr#' + rowId).append($('<td>').attr('scope','row').text(arrayOfStrings[1]));
+      }
+      $('tr#' + rowId).append($('<td>').attr('class',color).text(data[i].score));
+    }
+  });
 }
 
 function newsAge(){
@@ -54,10 +79,13 @@ function newsAge(){
 
 // ページのロードが終わった後の処理
 $(window).on('load',function(){
-  endload();
+  $('#js-loader').delay(300).fadeOut(400);
 });
 
 $(function(){
+  setTimeout(function(){
+    $('#js-loader').delay(300).fadeOut(400);
+  }, 5000);
   main();
   newsAge();
 });
