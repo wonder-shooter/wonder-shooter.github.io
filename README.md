@@ -23,6 +23,15 @@ $ gulp copy
 $ npm start
 ```
 
+### `サーバ単独起動`
+
+`git clone` 後下記を実行
+
+```
+$ npm install
+$ npm run standalone
+```
+
 ### `master`ブランチ
 
 GitHub Pages 公開用ブランチ（`source`ブランチからのsubtreeリポジトリ）
