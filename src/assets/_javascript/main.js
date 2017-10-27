@@ -42,7 +42,8 @@ function main(){
       if(a.score < b.score) return 1;
       return 0;
     });
-    for( var i=1; i <= 10; i++) {
+    console.log(data);
+    for( var i=0; i < 10; i++) {
       var name = data[i].name;
       var arrayOfStrings = name.split('#');
       var color = arrayOfStrings[0];
