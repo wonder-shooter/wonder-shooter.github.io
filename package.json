@@ -42,7 +42,7 @@
     "popper.js": "^1.12.6",
     "run-sequence": "^2.1.0",
     "startbootstrap-new-age": "^4.0.0-beta",
-    "underscore": "^1.8.3",
+    "underscore": "^1.7.0",
     "webpack": "^3.5.1"
   },
   "scripts": {
