@@ -69,3 +69,7 @@ typings/
 /src/assets/_scss/_bootstrap/
 /src/assets/_scss/_font-awesome/
 /src/assets/_scss/_simple-line-icons/
+
+# data フォルダ
+/.data/
+!/.data/.gitkeep

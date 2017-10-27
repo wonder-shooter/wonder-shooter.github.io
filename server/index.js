@@ -8,19 +8,20 @@ const writeFile = util.promisify(fs.writeFile);
 
 const rootPath = path.join(__dirname, '../');
 const htoocsPath = path.join(rootPath, 'htdocs');
-const scoreDataPath = path.join(htoocsPath, 'assets/js/score.json');
+const scoreDataPath = path.join(rootPath, '.data/score.json');
 
-// Routing
+// Static Files
 fastify.register(require('fastify-static'), {
   root: htoocsPath,
 });
-//
-fastify.get('/score', async (request, reply) => {
+// スコア参照
+fastify.get('/assets/js/score.json', async (request, reply) => {
+  console.log('ref file', scoreDataPath);
   const json = await readFile(scoreDataPath);
   reply.type('application/json').code(200);
   return JSON.parse(json);
 });
-//
+// スコア追加
 fastify.post('/score', async (request, reply) => {
   try {
     const data = await readFile(scoreDataPath);
