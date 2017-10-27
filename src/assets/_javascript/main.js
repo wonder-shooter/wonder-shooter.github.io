@@ -3,6 +3,7 @@
 import $ from 'jquery';
 import 'bootstrap';
 import 'jquery.easing';
+import _ from 'underscore';
 
 
 function main(){
@@ -12,12 +13,21 @@ function main(){
     $tableObjHead = $("#scorestable thead tr"),
     $tableObjBody = $("#scorestable tbody"),
     count = 3,
-    scoreArray = [];
+    rankSet = 10,
+    scoreArray = [],
+    setTableRaw = function(data,i,rank){
+      var name = data.name;
+      var arrayOfStrings = name.split('#');
+      var color = arrayOfStrings[0];
+      $('#top10 thead').append($('<tr>').attr('id', 'score' + i));
+      $('tr#score' + i).append($('<td>').text(rank));
+      $('tr#score' + i).append($('<td>').attr('class', color).text(data.name));
+      $('#score' + i).append($('<td>').attr('class', 'white').text(data.score));
+    };
   // Table
   $.getJSON("/assets/js/score.json" , function(data) {
+    // Today's Score Table表示
     for( var i=0; i < data.length; i++) {
-
-
       if( i === 0) {
         for( var n=0; n < count; n++) {
           var name = data[n].name;
@@ -36,21 +46,32 @@ function main(){
       }
       $('tr#' + rowId).append($('<td>').attr('class', 'white').text(data[i].score));
     }
-    // Top10表示
+
+    // Today's Top 10 Scores表示
+
+    // 並べ替え
     data.sort(function(a,b){
       if(a.score > b.score) return -1;
       if(a.score < b.score) return 1;
       return 0;
     });
-    console.log(data);
-    for( var i=0; i < 10; i++) {
-      var name = data[i].name;
-      var arrayOfStrings = name.split('#');
-      var color = arrayOfStrings[0];
-      $('#top10 thead').append($('<tr>').attr('id', 'rank' + i));
-      $('tr#rank' + i).append($('<td>').text(i));
-      $('tr#rank' + i).append($('<td>').attr('class', color).text(data[i].name));
-      $('#rank' + i).append($('<td>').attr('class', 'white').text(data[i].score));
+    var beforeScore,rank;
+    for( var i=0; i < rankSet; i++) {
+      if( rank !== 10 && beforeScore !== data[i].score) rank = i + 1;
+      // 10位の判定
+      if( i === rankSet - 1){
+        var top10Datas = _.filter(data, function(num){
+         return num.score === data[i].score;
+        });
+        for(var n = 0; n< top10Datas.length ; n++) {
+          setTableRaw(top10Datas[n], i+n ,rank);
+        }
+      }
+      // 1-9位
+      else {
+        setTableRaw(data[i],i,rank);
+        beforeScore = data[i].score;
+      }
     }
   });
 }
