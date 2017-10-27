@@ -17,6 +17,7 @@ function main(){
   $.getJSON("/assets/js/score.json" , function(data) {
     for( var i=0; i < data.length; i++) {
 
+
       if( i === 0) {
         for( var n=0; n < count; n++) {
           var name = data[n].name;
