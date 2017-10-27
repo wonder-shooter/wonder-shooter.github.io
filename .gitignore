@@ -66,4 +66,6 @@ typings/
 /node_modules
 /htdocs/assets/css/maps
 /htdocs/assets/maps
-/src/assets/_scss/_*/
+/src/assets/_scss/_bootstrap/
+/src/assets/_scss/_font-awesome/
+/src/assets/_scss/_simple-line-icons/

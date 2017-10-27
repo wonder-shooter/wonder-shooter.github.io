@@ -1,0 +1,73 @@
+// Styling for the download section
+section.pointstable {
+  position: relative;
+  padding: 150px 0;
+  h2 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+  .badges {
+    .badge-link {
+      display: block;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        height: 60px;
+      }
+      @media(min-width: 768px) {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .rankingTable {
+    th {
+      width: 45%;
+    }
+    th.rank {
+      width: 10%;
+    }
+  }
+  .scoreTable {
+    th {
+      width: 25%;
+    }
+  }
+  .rankingTable,
+  .scoreTable {
+    th,
+    td {
+      background-color: rgba(255, 255, 255, .4);
+      border-left: 1px solid #e9ecef;
+      &:first-child {
+        border-left: none;
+      }
+    }
+    th.pink,
+    td.pink {
+      background-color: $theme-sub;
+    }
+    th.purple,
+    td.purple {
+      background-color: $theme-primary;
+    }
+    th.green,
+    td.green {
+      background-color: $theme-tertiary;
+    }
+    th.white,
+    td.white {
+      background-color: rgba(255, 255, 255, .7);
+    }
+  }
+
+  @media(min-width: 768px) {
+    h2 {
+      font-size: 70px;
+    }
+  }
+
+
+}
