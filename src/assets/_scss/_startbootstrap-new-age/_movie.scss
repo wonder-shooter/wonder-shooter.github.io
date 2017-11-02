@@ -1,7 +1,7 @@
 // Styling for the call to action section
 section.movie {
     position: relative;
-    padding: 250px 0;
+    padding: 100px 0 0;
     background-color: $brand-yellow;
     // background-image: url('../img/bg-cta.jpg');
     background-position: center;
@@ -10,16 +10,18 @@ section.movie {
         position: relative;
         z-index: 1;
         h2 {
-            font-size: 50px;
-            max-width: 450px;
             margin-top: 0;
             margin-bottom: 25px;
             //color: white;
         }
-        @media (min-width: 768px) {
-            h2 {
-                font-size: 80px;
-            }
+        h3 {
+            font-size: 20px;
+        }
+        .section-heading {
+            margin-bottom: 100px;
+        }
+        iframe{
+          margin-bottom: 100px;
         }
     }
     .overlay {

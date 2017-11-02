@@ -7486,17 +7486,21 @@ section.system .system-item {
 
 section.movie {
   position: relative;
-  padding: 250px 0;
+  padding: 100px 0 0;
   background-color: #fee361;
   background-position: center; }
   section.movie .movie-content {
     position: relative;
     z-index: 1; }
     section.movie .movie-content h2 {
-      font-size: 50px;
-      max-width: 450px;
       margin-top: 0;
       margin-bottom: 25px; }
+    section.movie .movie-content h3 {
+      font-size: 20px; }
+    section.movie .movie-content .section-heading {
+      margin-bottom: 100px; }
+    section.movie .movie-content iframe {
+      margin-bottom: 100px; }
   section.movie .overlay {
     position: absolute;
     top: 0;
@@ -8738,9 +8742,7 @@ footer {
         display: inline-block;
         margin-bottom: 0; }
     section.pointstable h2 {
-      font-size: 70px; }
-      section.movie .movie-content h2 {
-        font-size: 80px; } }
+      font-size: 70px; } }
 
 @media (min-width: 992px) {
   .container {
