@@ -20,8 +20,20 @@ section.movie {
         .section-heading {
             margin-bottom: 100px;
         }
-        iframe{
+        .youtube_outer {
+          width: 100%;
+          padding-top: 57%;
+          position: relative;
+          top: 0;
+          left: 0;
           margin-bottom: 100px;
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+          }
         }
     }
     .overlay {

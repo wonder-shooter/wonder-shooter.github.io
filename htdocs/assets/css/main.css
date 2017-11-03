@@ -7499,8 +7499,19 @@ section.movie {
       font-size: 20px; }
     section.movie .movie-content .section-heading {
       margin-bottom: 100px; }
-    section.movie .movie-content iframe {
+    section.movie .movie-content .youtube_outer {
+      width: 100%;
+      padding-top: 57%;
+      position: relative;
+      top: 0;
+      left: 0;
       margin-bottom: 100px; }
+      section.movie .movie-content .youtube_outer iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important; }
   section.movie .overlay {
     position: absolute;
     top: 0;
