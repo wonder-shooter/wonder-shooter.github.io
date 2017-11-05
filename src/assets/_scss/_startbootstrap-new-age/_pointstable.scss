@@ -32,7 +32,7 @@ section.pointstable {
   }
   .scoreTable {
     th {
-      width: 25%;
+      width: 33.333333%;
     }
   }
   .rankingTable,
@@ -45,22 +45,29 @@ section.pointstable {
         border-left: none;
       }
     }
-    th.pink,
-    td.pink {
+    th.Pink,
+    td.Pink {
       background-color: $theme-sub;
     }
     th.purple,
     td.purple {
       background-color: $theme-primary;
     }
-    th.green,
-    td.green {
+    th.Green,
+    td.Green {
       background-color: $theme-tertiary;
     }
     th.white,
     td.white {
       background-color: rgba(255, 255, 255, .7);
     }
+  }
+  .scoreTable {
+    th:last-child,
+    td:last-child{
+      display: none;
+    }
+
   }
 
   @media(min-width: 768px) {

@@ -7425,7 +7425,7 @@ section.pointstable {
   section.pointstable .rankingTable th.rank {
     width: 10%; }
   section.pointstable .scoreTable th {
-    width: 25%; }
+    width: 33.333333%; }
   section.pointstable .rankingTable th,
   section.pointstable .rankingTable td,
   section.pointstable .scoreTable th,
@@ -7437,26 +7437,29 @@ section.pointstable {
     section.pointstable .scoreTable th:first-child,
     section.pointstable .scoreTable td:first-child {
       border-left: none; }
-  section.pointstable .rankingTable th.pink,
-  section.pointstable .rankingTable td.pink,
-  section.pointstable .scoreTable th.pink,
-  section.pointstable .scoreTable td.pink {
+  section.pointstable .rankingTable th.Pink,
+  section.pointstable .rankingTable td.Pink,
+  section.pointstable .scoreTable th.Pink,
+  section.pointstable .scoreTable td.Pink {
     background-color: #f34379; }
   section.pointstable .rankingTable th.purple,
   section.pointstable .rankingTable td.purple,
   section.pointstable .scoreTable th.purple,
   section.pointstable .scoreTable td.purple {
     background-color: #8a3afc; }
-  section.pointstable .rankingTable th.green,
-  section.pointstable .rankingTable td.green,
-  section.pointstable .scoreTable th.green,
-  section.pointstable .scoreTable td.green {
+  section.pointstable .rankingTable th.Green,
+  section.pointstable .rankingTable td.Green,
+  section.pointstable .scoreTable th.Green,
+  section.pointstable .scoreTable td.Green {
     background-color: #30da34; }
   section.pointstable .rankingTable th.white,
   section.pointstable .rankingTable td.white,
   section.pointstable .scoreTable th.white,
   section.pointstable .scoreTable td.white {
     background-color: rgba(255, 255, 255, 0.7); }
+  section.pointstable .scoreTable th:last-child,
+  section.pointstable .scoreTable td:last-child {
+    display: none; }
 
 section.system .section-heading {
   margin-bottom: 100px; }
