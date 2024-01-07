@@ -55,5 +55,8 @@
     "release:webpack": "webpack",
     "release:gulp": "gulp release",
     "standalone": "NODE_PORT=80 node server/index.js"
+  },
+  "volta": {
+    "node": "7.10.1"
   }
 }
