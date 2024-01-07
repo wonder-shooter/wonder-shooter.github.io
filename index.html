@@ -1,156 +1,166 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ふしぎマニューバー - Wonder Shooter</title>
-    <meta name="description" content="DojoCon Japan 2017 にて、Workshopとして開催した「ふしぎマニューバーでふかし体験」のwebサイトです">
-    <meta name="keywords" content="DojoCon Japan 2017,ふしぎマニューバー,Unity,Vive,Tracker,Lighthouse">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://wonder-shooter.github.io">
-    <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="ふしぎマニューバー - Wonder Shooter">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://wonder-shooter.github.io/assets/img/ogp.png">
-    <meta property="og:url" content="https://wonder-shooter.github.io">
-    <meta property="og:description" content="DojoCon Japan 2017 にて、Workshopとして開催した「ふしぎマニューバーでふかし体験」のwebサイトです">
-    <meta property="og:site_name" content="ふしぎマニューバー - Wonder Shooter">
-    <meta property="og:locale" content="ja">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@kozarusha">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="/assets/img/favicon-64x64.png" sizes="64x64">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
-  </head>
-  <body id="page-top">
-    <div class="l-wrap">
-      <!-- Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Wonder Shooter</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fa fa-bars"></i></button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pointstable">Score Table</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#system">Systems</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#movie">Movie</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Header-->
-      <header class="masthead">
-        <div class="container h-100">
-          <div class="row h-100">
-            <div class="my-auto">
-              <div class="header-content mx-auto">
-                <h1><img class="img-fluid" src="/assets/img/svganime.png"></h1>
-                <div class="text-center"><a class="btn btn-outline btn-xl js-scroll-trigger" href="#pointstable">Check Points Table !</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- /Header-->
-      <section class="pointstable bg-primary text-center" id="pointstable">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 mx-auto">
-              <h2 class="section-heading">Score Table</h2>
-              <p>on November 4th, 2017</p>
-              <hr>
-              <div class="text-center mt-4">
-                <h3>Today's Top 10 Scores</h3>
-                <div class="table-responsive" id="top10">
-                  <table class="table rankingTable mt-4">
-                    <thead>
-                      <tr>
-                        <th class="rank">#</th>
-                        <th>name</th>
-                        <th>score</th>
-                      </tr>
-                    </thead>
-                    <tbody></tbody>
-                  </table>
-                </div>
-                <h3 class="mt-4">Today's Score Table</h3>
-                <div class="table-responsive" id="scorestable">
-                  <table class="table scoreTable mt-4">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                      </tr>
-                    </thead>
-                    <tbody></tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="system" id="system">
-        <div class="container">
-          <div class="section-heading text-center">
-            <h2>Wonder Shooter</h2>
-            <p class="text-muted">Systems we are using</p>
-            <hr>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="system-item"><a href="https://unity3d.com/jp"><i class="icon-camrecorder text-primary"></i></a>
-                <h3>Unity</h3>
-                <p class="text-muted">Game Engine</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="system-item"><a href="https://www.vive.com/jp/"><i class="icon-paper-plane text-primary"></i></a>
-                <h3>VIVE</h3>
-                <p class="text-muted">Tracking System</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="movie" id="movie">
-        <div class="movie-content">
-          <div class="container">
-            <h2>How does<br>Wonder Shooter<br>work?</h2>
-          </div>
-        </div>
-      </section>
-      <section class="contact" id="team">
-        <div class="container">
-          <h2>Our Team</h2>
-          <div class="row justify-content-center">
-            <div class="col-md-4 text-center"><a href="http://meteorworks.jp/"><img class="img-fluid" src="assets/img/meteorworks.svg" alt="METEORWORKS"></a></div>
-            <div class="col-md-4 text-center"><a href="https://kozarusha.com/"><img class="img-fluid" src="assets/img/kozarusha.svg" alt="こざる舍"></a></div>
-          </div>
-        </div>
-      </section>
-      <!-- Footer-->
-      <footer>
-        <div class="container">
-          <p>© 2017 Wonder-Shooter Product Team. All Rights Reserved.</p>
-        </div>
-      </footer>
-      <!-- /Footer-->
+<html lang="ja"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ふしぎマニューバー - Wonder Shooter</title>
+  <meta name="description" content="DojoCon Japan 2017 にて、Workshopとして開催した「ふしぎマニューバーでふかし体験」のwebサイトです">
+  <meta name="keywords" content="DojoCon Japan 2017,ふしぎマニューバー,Unity,Vive,Tracker,Lighthouse">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://wondershooter.net">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:title" content="ふしぎマニューバー - Wonder Shooter">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://wondershooter.net/assets/img/ogp.png">
+  <meta property="og:url" content="http://wondershooter.net">
+  <meta property="og:description" content="DojoCon Japan 2017 にて、Workshopとして開催した「ふしぎマニューバーでふかし体験」のwebサイトです">
+  <meta property="og:site_name" content="ふしぎマニューバー - Wonder Shooter">
+  <meta property="og:locale" content="ja">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@kozarusha">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-64x64.png" sizes="64x64">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
+</head>
+<body id="page-top">
+<div class="l-wrap">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
+    <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Wonder Shooter</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fa fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#pointstable">Score Table</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#system">Systems</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#movie">Movies</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="loader" id="js-loader">
-      <div class="loader-animation"></div>
+  </nav>
+  <!-- Header-->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="my-auto">
+          <div class="header-content mx-auto">
+            <h1><img class="img-fluid" src="/assets/img/svganime.png"></h1>
+            <div class="text-center"><a class="btn btn-outline btn-xl js-scroll-trigger" href="#pointstable">Check Points Table !</a></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-108468029-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-108468029-1');
-    </script>
-    <script src="/assets/js/main.js"></script>
-  </body>
-</html>
+  </header>
+  <!-- /Header-->
+  <section class="pointstable bg-primary text-center" id="pointstable">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">Score Table</h2>
+          <p>on November 4th, 2017</p>
+          <hr>
+          <div class="text-center mt-4">
+            <h3>Today's Top 10 Scores</h3>
+            <div class="table-responsive" id="top10">
+              <table class="table rankingTable mt-4">
+                <thead>
+                <tr>
+                  <th class="rank">#</th>
+                  <th>name</th>
+                  <th>score</th>
+                </tr>
+                <tr id="score0"><td>1</td><td class="Green">Green#065</td><td class="white">2020</td></tr><tr id="score1"><td>2</td><td class="Green">Green#008</td><td class="white">1860</td></tr><tr id="score2"><td>3</td><td class="Green">Green#040</td><td class="white">1800</td></tr><tr id="score3"><td>4</td><td class="Pink">Pink#002</td><td class="white">1790</td></tr><tr id="score4"><td>5</td><td class="Pink">Pink#034</td><td class="white">1770</td></tr><tr id="score5"><td>5</td><td class="Green">Green#057</td><td class="white">1770</td></tr><tr id="score6"><td>7</td><td class="Pink">Pink#026</td><td class="white">1700</td></tr><tr id="score7"><td>8</td><td class="Pink">Pink#038</td><td class="white">1660</td></tr><tr id="score8"><td>9</td><td class="Pink">Pink#000</td><td class="white">1590</td></tr><tr id="score9"><td>9</td><td class="Pink">Pink#000</td><td class="white">1590</td></tr><tr id="score10"><td>9</td><td class="Pink">Pink#021</td><td class="white">1590</td></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <h3 class="mt-4">Today's Score Table</h3>
+            <div class="table-responsive" id="scorestable">
+              <table class="table scoreTable mt-4">
+                <thead>
+                <tr>
+                  <th>#</th>
+                  <th class="Pink">Pink</th><th class="Green">Green</th><th class="Purple">Purple</th></tr>
+                </thead>
+                <tbody><tr id="row000"><td scope="row">000</td><td class="white">1590</td><td class="white">1310</td><td class="white">0</td></tr><tr id="row001"><td scope="row">001</td><td class="white">440</td><td class="white">710</td><td class="white">0</td></tr><tr id="row002"><td scope="row">002</td><td class="white">1790</td><td class="white">520</td><td class="white">0</td></tr><tr id="row003"><td scope="row">003</td><td class="white">540</td><td class="white">820</td><td class="white">0</td></tr><tr id="row004"><td scope="row">004</td><td class="white">490</td><td class="white">1470</td><td class="white">0</td></tr><tr id="row005"><td scope="row">005</td><td class="white">510</td><td class="white">660</td><td class="white">0</td></tr><tr id="row006"><td scope="row">006</td><td class="white">1090</td><td class="white">330</td><td class="white">0</td></tr><tr id="row007"><td scope="row">007</td><td class="white">570</td><td class="white">1150</td><td class="white">0</td></tr><tr id="row008"><td scope="row">008</td><td class="white">520</td><td class="white">1860</td><td class="white">0</td></tr><tr id="row009"><td scope="row">009</td><td class="white">1370</td><td class="white">710</td><td class="white">0</td></tr><tr id="row010"><td scope="row">010</td><td class="white">1120</td><td class="white">1240</td><td class="white">0</td></tr><tr id="row011"><td scope="row">011</td><td class="white">130</td><td class="white">780</td><td class="white">0</td></tr><tr id="row012"><td scope="row">012</td><td class="white">380</td><td class="white">720</td><td class="white">0</td></tr><tr id="row013"><td scope="row">013</td><td class="white">1290</td><td class="white">420</td><td class="white">0</td></tr><tr id="row014"><td scope="row">014</td><td class="white">730</td><td class="white">270</td><td class="white">0</td></tr><tr id="row015"><td scope="row">015</td><td class="white">830</td><td class="white">950</td><td class="white">0</td></tr><tr id="row016"><td scope="row">016</td><td class="white">150</td><td class="white">350</td><td class="white">0</td></tr><tr id="row017"><td scope="row">017</td><td class="white">950</td><td class="white">320</td><td class="white">0</td></tr><tr id="row018"><td scope="row">018</td><td class="white">340</td><td class="white">1410</td><td class="white">0</td></tr><tr id="row019"><td scope="row">019</td><td class="white">590</td><td class="white">730</td><td class="white">0</td></tr><tr id="row020"><td scope="row">020</td><td class="white">720</td><td class="white">1330</td><td class="white">0</td></tr><tr id="row021"><td scope="row">021</td><td class="white">1590</td><td class="white">940</td><td class="white">0</td></tr><tr id="row022"><td scope="row">022</td><td class="white">620</td><td class="white">150</td><td class="white">0</td></tr><tr id="row023"><td scope="row">023</td><td class="white">1140</td><td class="white">870</td><td class="white">0</td></tr><tr id="row024"><td scope="row">024</td><td class="white">1410</td><td class="white">200</td><td class="white">0</td></tr><tr id="row025"><td scope="row">025</td><td class="white">1320</td><td class="white">390</td><td class="white">0</td></tr><tr id="row026"><td scope="row">026</td><td class="white">1700</td><td class="white">1480</td><td class="white">0</td></tr><tr id="row027"><td scope="row">027</td><td class="white">330</td><td class="white">640</td><td class="white">0</td></tr><tr id="row028"><td scope="row">028</td><td class="white">520</td><td class="white">570</td><td class="white">0</td></tr><tr id="row029"><td scope="row">029</td><td class="white">840</td><td class="white">300</td><td class="white">0</td></tr><tr id="row030"><td scope="row">030</td><td class="white">760</td><td class="white">60</td><td class="white">0</td></tr><tr id="row031"><td scope="row">031</td><td class="white">1430</td><td class="white">390</td><td class="white">0</td></tr><tr id="row032"><td scope="row">032</td><td class="white">1100</td><td class="white">790</td><td class="white">0</td></tr><tr id="row033"><td scope="row">033</td><td class="white">1150</td><td class="white">1430</td><td class="white">0</td></tr><tr id="row034"><td scope="row">034</td><td class="white">1770</td><td class="white">1110</td><td class="white">0</td></tr><tr id="row035"><td scope="row">035</td><td class="white">1350</td><td class="white">210</td><td class="white">0</td></tr><tr id="row036"><td scope="row">036</td><td class="white">920</td><td class="white">360</td><td class="white">0</td></tr><tr id="row037"><td scope="row">037</td><td class="white">690</td><td class="white">860</td><td class="white">0</td></tr><tr id="row038"><td scope="row">038</td><td class="white">1660</td><td class="white">1330</td><td class="white">0</td></tr><tr id="row039"><td scope="row">039</td><td class="white">1020</td><td class="white">970</td><td class="white">0</td></tr><tr id="row040"><td scope="row">040</td><td class="white">1120</td><td class="white">1800</td><td class="white">0</td></tr><tr id="row041"><td scope="row">041</td><td class="white">1100</td><td class="white">980</td><td class="white">0</td></tr><tr id="row042"><td scope="row">042</td><td class="white">20</td><td class="white">1410</td><td class="white">0</td></tr><tr id="row043"><td scope="row">043</td><td class="white">470</td><td class="white">140</td><td class="white">0</td></tr><tr id="row044"><td scope="row">044</td><td class="white">620</td><td class="white">800</td><td class="white">0</td></tr><tr id="row045"><td scope="row">045</td><td class="white">720</td><td class="white">920</td><td class="white">0</td></tr><tr id="row046"><td scope="row">046</td><td class="white">230</td><td class="white">300</td><td class="white">0</td></tr><tr id="row047"><td scope="row">047</td><td class="white">650</td><td class="white">390</td><td class="white">0</td></tr><tr id="row048"><td scope="row">048</td><td class="white">370</td><td class="white">100</td><td class="white">0</td></tr><tr id="row049"><td scope="row">049</td><td class="white">700</td><td class="white">370</td><td class="white">0</td></tr><tr id="row050"><td scope="row">050</td><td class="white">390</td><td class="white">910</td><td class="white">0</td></tr><tr id="row051"><td scope="row">051</td><td class="white">300</td><td class="white">40</td><td class="white">0</td></tr><tr id="row052"><td scope="row">052</td><td class="white">160</td><td class="white">850</td><td class="white">0</td></tr><tr id="row053"><td scope="row">053</td><td class="white">190</td><td class="white">1100</td><td class="white">0</td></tr><tr id="row054"><td scope="row">054</td><td class="white">260</td><td class="white">1060</td><td class="white">0</td></tr><tr id="row055"><td scope="row">055</td><td class="white">50</td><td class="white">700</td><td class="white">0</td></tr><tr id="row056"><td scope="row">056</td><td class="white">370</td><td class="white">880</td><td class="white">0</td></tr><tr id="row057"><td scope="row">057</td><td class="white">1560</td><td class="white">1770</td><td class="white">0</td></tr><tr id="row058"><td scope="row">058</td><td class="white">1060</td><td class="white">190</td><td class="white">0</td></tr><tr id="row059"><td scope="row">059</td><td class="white">980</td><td class="white">1110</td><td class="white">0</td></tr><tr id="row060"><td scope="row">060</td><td class="white">1030</td><td class="white">20</td><td class="white">0</td></tr><tr id="row061"><td scope="row">061</td><td class="white">150</td><td class="white">250</td><td class="white">0</td></tr><tr id="row062"><td scope="row">062</td><td class="white">110</td><td class="white">1120</td><td class="white">0</td></tr><tr id="row063"><td scope="row">063</td><td class="white">440</td><td class="white">160</td><td class="white">0</td></tr><tr id="row064"><td scope="row">064</td><td class="white">180</td><td class="white">740</td><td class="white">0</td></tr><tr id="row065"><td scope="row">065</td><td class="white">350</td><td class="white">2020</td><td class="white">0</td></tr><tr id="row066"><td scope="row">066</td><td class="white">490</td><td class="white">910</td><td class="white">0</td></tr><tr id="row067"><td scope="row">067</td><td class="white">480</td><td class="white">70</td><td class="white">0</td></tr><tr id="row068"><td scope="row">068</td><td class="white">80</td><td class="white">580</td><td class="white">0</td></tr><tr id="row069"><td scope="row">069</td><td class="white">510</td><td class="white">370</td><td class="white">0</td></tr><tr id="row070"><td scope="row">070</td><td class="white">790</td><td class="white">510</td><td class="white">0</td></tr><tr id="row071"><td scope="row">071</td><td class="white">620</td><td class="white">820</td><td class="white">0</td></tr><tr id="row072"><td scope="row">072</td><td class="white">560</td><td class="white">370</td><td class="white">0</td></tr><tr id="row073"><td scope="row">073</td><td class="white">410</td><td class="white">130</td><td class="white">0</td></tr><tr id="row074"><td scope="row">074</td><td class="white">1240</td><td class="white">610</td><td class="white">0</td></tr><tr id="row075"><td scope="row">075</td><td class="white">1290</td><td class="white">890</td><td class="white">0</td></tr><tr id="row082"><td scope="row">082</td><td class="white">440</td><td class="white">290</td><td class="white">0</td></tr><tr id="row083"><td scope="row">083</td><td class="white">780</td><td class="white">550</td><td class="white">0</td></tr><tr id="row084"><td scope="row">084</td><td class="white">460</td><td class="white">570</td><td class="white">0</td></tr><tr id="row085"><td scope="row">085</td><td class="white">1470</td><td class="white">890</td><td class="white">0</td></tr><tr id="row086"><td scope="row">086</td><td class="white">940</td><td class="white">560</td><td class="white">0</td></tr><tr id="row087"><td scope="row">087</td><td class="white">520</td><td class="white">930</td><td class="white">0</td></tr><tr id="row088"><td scope="row">088</td><td class="white">130</td><td class="white">1040</td><td class="white">0</td></tr><tr id="row089"><td scope="row">089</td><td class="white">1340</td><td class="white">680</td><td class="white">0</td></tr><tr id="row090"><td scope="row">090</td><td class="white">1130</td><td class="white">900</td><td class="white">0</td></tr><tr id="row091"><td scope="row">091</td><td class="white">1520</td><td class="white">300</td><td class="white">0</td></tr><tr id="row092"><td scope="row">092</td><td class="white">1020</td><td class="white">450</td><td class="white">0</td></tr><tr id="row093"><td scope="row">093</td><td class="white">550</td><td class="white">390</td><td class="white">0</td></tr><tr id="row094"><td scope="row">094</td><td class="white">730</td><td class="white">950</td><td class="white">0</td></tr><tr id="row095"><td scope="row">095</td><td class="white">1410</td><td class="white">270</td><td class="white">0</td></tr><tr id="row096"><td scope="row">096</td><td class="white">920</td><td class="white">1450</td><td class="white">0</td></tr><tr id="row097"><td scope="row">097</td><td class="white">400</td><td class="white">950</td><td class="white">0</td></tr><tr id="row098"><td scope="row">098</td><td class="white">1570</td><td class="white">860</td><td class="white">0</td></tr><tr id="row099"><td scope="row">099</td><td class="white">540</td><td class="white">780</td><td class="white">0</td></tr><tr id="row100"><td scope="row">100</td><td class="white">850</td><td class="white">610</td><td class="white">0</td></tr><tr id="row101"><td scope="row">101</td><td class="white">250</td><td class="white">1000</td><td class="white">0</td></tr><tr id="row102"><td scope="row">102</td><td class="white">1080</td><td class="white">770</td><td class="white">0</td></tr><tr id="row103"><td scope="row">103</td><td class="white">1540</td><td class="white">1210</td><td class="white">0</td></tr><tr id="row104"><td scope="row">104</td><td class="white">660</td><td class="white">290</td><td class="white">0</td></tr><tr id="row105"><td scope="row">105</td><td class="white">600</td><td class="white">1370</td><td class="white">0</td></tr><tr id="row106"><td scope="row">106</td><td class="white">90</td><td class="white">10</td><td class="white">0</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="system" id="system">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>Wonder Shooter</h2>
+        <p class="text-muted">Systems we are using</p>
+        <hr>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="system-item"><a href="https://unity3d.com/jp"><i class="icon-camrecorder text-primary"></i></a>
+            <h3>Unity</h3>
+            <p class="text-muted">Game Engine</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="system-item"><a href="https://www.vive.com/jp/"><i class="icon-paper-plane text-primary"></i></a>
+            <h3>VIVE</h3>
+            <p class="text-muted">Tracking System</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="movie" id="movie">
+    <div class="movie-content">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Wonder Shooter Movies</h2>
+          <p class="text-muted">How does it work ?</p>
+          <hr>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="youtube_outer"><iframe src="https://www.youtube.com/embed/rshJYkN9liU" frameborder="0" gesture="media" allowfullscreen=""></iframe></div>
+          </div>
+          <div class="col-md-4">
+            <div class="youtube_outer"><iframe src="https://www.youtube.com/embed/2gfmnY84YG8" frameborder="0" gesture="media" allowfullscreen=""></iframe></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="team">
+    <div class="container">
+      <h2>Our Team</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center"><a href="http://meteorworks.jp/"><img class="img-fluid" src="assets/img/meteorworks.svg" alt="METEORWORKS"></a></div>
+        <div class="col-md-4 text-center"><a href="https://kozarusha.com/"><img class="img-fluid" src="assets/img/kozarusha.svg" alt="こざる舍"></a></div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer>
+    <div class="container">
+      <p>© 2017 Wonder-Shooter Product Team. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- /Footer-->
+</div>
+<div class="loader" id="js-loader" style="display: none;">
+  <div class="loader-animation"></div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-H6SW43TC2C&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-108468029-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-108468029-2');
+</script>
+<!--<script src="/assets/js/main.js"></script>-->
+
+</body></html>
